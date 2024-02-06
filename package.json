@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "boxicons": "^2.1.4",
+    "taos": "^1.0.5",
+    "typed.js": "^2.1.0"
+  }
+}

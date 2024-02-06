@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rhama Xy</title>
+  <link rel="icon" type="image/x-icon" href="images/Logo.png" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Box Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#home"><h1 class="font-bold text-3xl">RhamaXy</h1></a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <!-- <a href="#portfolio">Portfolio</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <i class="bx bxs-moon" id="light-mode-icon"></i>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1>Rhama Dw</h1>
+      <h3>A <span class="multiple-text"></span></h3>
+      <div class="links">
+        <!-- <a href="#portfolio" class="btn">View Portfolio</a> -->
+        <div class="button-links">
+          <a href="https://github.com/xzionn" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61550764020575&mibextid=ZbWKwL" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/rhamaxx_" target="_blank"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="about-content">
+      <p>
+        I am a Junior Pentester and Jr. Backend Developer, I am excited to delve into the field of cybersecurity and
+        backend development. With a penchant for automating scripts using Python, I strive to bring a creative and
+        solution-oriented mindset to projects, contributing to improved security and efficient backend solutions.
+      </p>
+    </div>
+
+    <h3>Skill</h3>
+
+    <div class="">
+
+      <!-- SKILL -->
+      <div class="flex justify-between mb-1">
+        <p class="text-2xl font-medium ">Python</p>
+        <p class="text-2xl font-medium ">85%</p>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-6 ">
+        <div class="bg-blue-600 h-6 rounded-full" style="width: 85%"></div>
+      </div>
+
+      <div class="flex justify-between mb-1 mt-6">
+        <p class="text-2xl font-medium ">HTML</p>
+        <p class="text-2xl font-medium ">90%</p>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-6 ">
+        <div class="bg-blue-600 h-6 rounded-full" style="width: 90%"></div>
+      </div>
+
+      <div class="flex justify-between mb-1 mt-6">
+        <p class="text-2xl font-medium ">CSS</p>
+        <p class="text-2xl font-medium ">40%</p>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-6">
+        <div class="bg-blue-600 h-6 rounded-full" style="width: 40%"></div>
+      </div>
+
+      <div class="flex justify-between mb-1 mt-6">
+        <p class="text-2xl font-medium ">JavaScript</p>
+        <p class="text-2xl font-medium ">20%</p>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-6 ">
+        <div class="bg-blue-600 h-6 rounded-full" style="width: 20%"></div>
+      </div>
+
+      <div class="flex justify-between mb-1 mt-6">
+        <p class="text-2xl font-medium ">HTML</p>
+        <p class="text-2xl font-medium ">90%</p>
+      </div>
+      <div class="w-full bg-gray-200 rounded-full h-6 ">
+        <div class="bg-blue-600 h-6 rounded-full" style="width: 90%"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form id="contact-form">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+      <textarea id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+      <button type="submit" class="btn" id="mailSendButton" name="submit">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Created by <span>Rhama Damarwijaya </span>| 2024</p>
+    </div>
+
+    <div class="footer-icons">
+      <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="node_modules/typed.js/dist/typed.umd.js"></script>
+  
+  <!-- Email.js -->
+  <script src="node_modules/@emailjs/browser/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("ISdryNjf-jDRByQbG");
+    })();
+  </script>
+
+  <!-- Custom js -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>
